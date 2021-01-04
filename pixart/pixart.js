@@ -11,3 +11,9 @@ setColor.addEventListener("click", function(evt){
     const colorBox = document.querySelector(".brush");
     colorBox.style.background = colorField.value;
 })
+
+for (i = 0; i < 20; i++) {
+    let aBox = document.createElement("div");
+    aBox.classList.add("square");
+    document.body.appendChild(aBox);
+}
