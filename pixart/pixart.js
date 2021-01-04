@@ -1,8 +1,10 @@
 console.log("js file is linked");
 
-const setColor = document.querySelector("form");
+const setColor = document.querySelector("#set-color");
 
-setColor.addEventListener("submit", function(evt){
+
+
+setColor.addEventListener("click", function(evt){
     evt.preventDefault();
     const colorField = document.querySelector("#color-field");
     console.log(colorField.value);
