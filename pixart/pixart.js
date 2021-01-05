@@ -24,6 +24,7 @@ const squareColor = document.querySelectorAll(".square");
 //https://stackoverflow.com/questions/40956717/how-to-addeventlistener-to-multiple-elements-in-a-single-line
 squareColor.forEach(function(x) {
     x.addEventListener("click", function(){
-    x.style.background = "green";
+        const brush = document.querySelector(".brush");
+        x.style.background = brush.style.background;
     })
 })
