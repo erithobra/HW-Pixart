@@ -13,7 +13,7 @@ setColor.addEventListener("click", function(evt){
 })
 
 
-for (i = 0; i < 20; i++) {
+for (i = 0; i < 8000; i++) {
     let aBox = document.createElement("div");
     aBox.classList.add("square");
     document.body.appendChild(aBox);
@@ -23,7 +23,7 @@ const squareColor = document.querySelectorAll(".square");
 
 //https://stackoverflow.com/questions/40956717/how-to-addeventlistener-to-multiple-elements-in-a-single-line
 squareColor.forEach(function(x) {
-    x.addEventListener("click", function(){
+    x.addEventListener("mouseover", function(){
         const brush = document.querySelector(".brush");
         x.style.background = brush.style.background;
     })
